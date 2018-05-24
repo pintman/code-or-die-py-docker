@@ -17,7 +17,11 @@ WORKDIR /
 RUN git clone https://github.com/julian-zucker/code-or-die.git
 
 WORKDIR /code-or-die
-#COPY . .
+
+# Patch utf8-encoded README
+RUN apt-get install -y konwert && \
+	konwert utf8-ascii README.md > README2.md && \
+	mv README2.md README.md
 
 # assuming file secrets.txt with table name, hostname, portnumber, 
 # postgresuser, password (on per line)
