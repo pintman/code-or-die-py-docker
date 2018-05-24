@@ -2,6 +2,7 @@
 
 /etc/init.d/postgresql start
 
+# creating database and changing user password
 su -c "psql -c \"create database code_or_die\"" postgres
 su -c "psql -c \"alter user postgres with password '123456'\"" postgres
 
