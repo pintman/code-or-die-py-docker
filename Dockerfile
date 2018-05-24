@@ -24,6 +24,11 @@ RUN apt-get install -y konwert && \
 	konwert utf8-ascii README.md > README2.md && \
 	mv README2.md README.md
 
+# Adding some civilizations
+RUN sed -e 's/("two", "two")/("two", "two"), ("three", "three"), ("four", "four")/' app.py > app2.py && \
+	mv app2.py app.py
+
+
 # assuming file secrets.txt with table name, hostname, portnumber, 
 # postgresuser and password (on per line)
 COPY secrets.txt .
