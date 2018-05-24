@@ -10,8 +10,12 @@ container afterwards. Port 80 will be exposed on the docker host.
 
 ## Sample session
 
-By default there a four teams named 'one', 'two', 'three' and 'four'. The 
-default API-Key for each team is the same as the team name and must be sent in 
+By default there a four teams named 'one', 'two', 'three' and 'four'. Get instructions
+by requesting the root.
+
+    $ curl localhost/
+
+The default API-Key for each team is the same as the team name and must be sent in 
 the header field 'api-key' for each request.
 
     $ curl -H 'api-key: one' localhost/systems
