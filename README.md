@@ -5,8 +5,8 @@ This docker build relies on the
 
 ## Installation
 
-Run ``docker-build-run.sh`` to build the container and run a temporary 
-container afterwards. Port 80 will be exposed on the docker host.
+Run ``docker-compose up -d`` to build and run the container 
+afterwards. Port 80 will be exposed on the docker host.
 
 ## Sample session
 
