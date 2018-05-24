@@ -26,7 +26,7 @@ RUN apt-get install -y konwert && \
 	mv README2.md README.md
 
 # assuming file secrets.txt with table name, hostname, portnumber, 
-# postgresuser, password (on per line)
+# postgresuser and password (on per line)
 COPY secrets.txt .
 
 COPY docker-entrypoint.sh /
