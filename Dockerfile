@@ -14,7 +14,9 @@ RUN python3.6 -m pip install flask pygresql networkx apscheduler
 RUN apt-get install -y git
 
 WORKDIR /
-RUN git clone https://github.com/julian-zucker/code-or-die.git
+RUN git clone https://github.com/julian-zucker/code-or-die.git && \
+	cd code-or-die && \
+	git checkout 1322aadbafd8afdbb25488383f2227d296e5463e
 
 WORKDIR /code-or-die
 
