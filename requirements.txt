@@ -1,0 +1,17 @@
+APScheduler==3.5.1
+click==6.7
+decorator==4.3.0
+Flask==1.0.2
+itsdangerous==0.24
+Jinja2==2.10
+MarkupSafe==1.0
+networkx==2.1
+pycurl==7.43.0
+pygobject==3.20.0
+PyGreSQL==5.0.4
+python-apt==1.1.0b1+ubuntu0.16.4.1
+pytz==2018.4
+six==1.11.0
+tzlocal==1.5.1
+unattended-upgrades==0.1
+Werkzeug==0.14.1
