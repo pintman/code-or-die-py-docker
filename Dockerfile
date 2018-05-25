@@ -12,7 +12,7 @@ RUN add-apt-repository ppa:deadsnakes/ppa &&\
 WORKDIR /
 RUN git clone https://github.com/julian-zucker/code-or-die.git && \
 	cd code-or-die && \
-	git checkout 1322aadbafd8afdbb25488383f2227d296e5463e
+	git checkout 9fe363c616b4970362d557de1639fa767b82322c
 
 WORKDIR /code-or-die
 
